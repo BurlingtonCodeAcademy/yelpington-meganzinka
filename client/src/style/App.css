@@ -1,0 +1,109 @@
+/*-------------App ---------------*/
+/*create a grid for the entire page*/
+#app-container {
+  display:grid;
+  grid-template-columns: 1fr 2fr 0.15fr 2fr;
+  grid-template-rows: 600px;
+
+}
+/*specify map dimensions*/
+#mapid {
+  height:180px;
+  display: flex;
+  grid-column: 2; 
+}
+
+/*list of restaurants in column 1*/
+#nav-bar-container {
+  grid-column: 1;
+}
+/*map in middle*/
+#map-container {
+  grid-column: 2;
+  margin: 5px;
+}
+#add-comment {
+  margin-top: 10px;
+  grid-column: 2;
+
+}
+/*restaurant info to right*/
+#restaurant-container {
+  grid-column: 4;
+  grid-row:1;
+
+}
+
+#main-header {
+  text-align: center;
+  background-color: #C0D9D9;
+  color: #2F4F4F;
+  padding: 10px;
+  margin-bottom: 5px; 
+  text-decoration: none;
+} 
+header Link {
+  text-decoration: none;
+}
+
+body {
+  color: #1d3557;
+  font-family : Avenir; 
+  margin: 5px;
+}
+
+h1 {
+  margin: 0;
+  text-decoration: none;
+}
+
+/*--------------Comment portion----------------*/
+textarea {
+  font-family: Avenir;
+  width:90%;
+  height: 10vh;
+  margin: 5px;
+  font-size:16px;
+}
+
+input {
+  margin: 5px;
+  font-family: Avenir;
+  font-size:16px;
+
+}
+
+#submit-button {
+  text-align: center;
+  height: 2vw;
+  width: 7vw;
+  background-color: #197278;
+  color: white;
+  font-size: 1vw;
+  border: 0;
+  border-radius: 5%;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 2px #d8d8d8;
+}
+
+form {
+  margin-top: 10px;
+}
+label {
+  margin:5px;
+  font-weight: bold;
+}
+
+/*-----------------Nav Bar-------------------*/ 
+h4 {
+  margin:2px;
+}
+
+.nav-item { 
+  padding: 5px; 
+  font-size: larger;
+  text-decoration: none;
+  display: flex;
+  color: #1d3557;
+}
